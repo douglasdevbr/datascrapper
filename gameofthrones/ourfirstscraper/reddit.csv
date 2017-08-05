@@ -1,0 +1,2348 @@
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""33143bc9-8dca-429a-97b8-208a63ec43b8"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""9b1c4e58-ed5e-4c80-90b8-03017eefe05c"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""97c67da8-c750-445d-b200-2f8ba238ef68"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""d46b7a59-a0dc-4982-9500-aa4066f05503"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""371dd127-48e6-4912-8b36-cabe157f4446"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""gj5V/jpDzaZCcwecVo7ad1OGuMRQjJt6NdyWOdgeIv4ZCk2K"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""69abdafb-eb68-45c7-a271-d5a657e39469"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""cd803a52-b61a-4f1c-b6aa-34b8153561f9"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""950a55ea-ba74-47ee-af49-0b6d13225435"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""82a76acd-0179-4a93-ab40-ff277d6b7abe"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""838d19b7-56ac-415a-ae54-354a4c173b8c"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""mqhrNP5EQhdCcwecVo7ad6YmvSkP+Aq/eIWQBpHUTqNd25FV"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" value=""407.468.738-08"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""faae3165-10b6-4458-b7b0-73e4fa8e7f7c"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""mqhrNP5EQhdCcwecVo7ad6YmvSkP+Aq/eIWQBpHUTqNd25FV"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" value=""407.468.738-08"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""0f01a882-a063-48b3-9e4f-9bdb7aa871f5"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""e1eb3b1b-6fba-4889-9207-53557eea35ed"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""873ab3ac-c2d9-4451-8e97-585f7fdc4b2c"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""3acd3454-9850-4d19-bfd4-7ad96621b4a3"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""mqhrNP5EQhdCcwecVo7ad6YmvSkP+Aq/eIWQBpHUTqNd25FV"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" value=""407.468.738-08"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""4de5330a-ed2f-46f4-87c3-0a1a7f36f8a5"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""mqhrNP5EQhdCcwecVo7ad6YmvSkP+Aq/eIWQBpHUTqNd25FV"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" value=""407.468.738-08"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""ba28eb61-0466-4ef4-8f80-9e4d0548925b"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""mqhrNP5EQhdCcwecVo7ad6YmvSkP+Aq/eIWQBpHUTqNd25FV"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" value=""40746873808"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""0828a159-2a4c-483f-87f7-61eff2adcbff"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""mqhrNP5EQhdCcwecVo7ad6YmvSkP+Aq/eIWQBpHUTqNd25FV"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" value=""40746873808"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""f80a1bd1-dec7-43dd-941a-1283e40b17c1"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""mqhrNP5EQhdCcwecVo7ad6YmvSkP+Aq/eIWQBpHUTqNd25FV"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""02028456-57f9-4c63-8d98-52e349bd6e46"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""mqhrNP5EQhdCcwecVo7ad6YmvSkP+Aq/eIWQBpHUTqNd25FV"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""802094f5-577a-4f32-b0e1-9289243ec065"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""mqhrNP5EQhdCcwecVo7ad6YmvSkP+Aq/eIWQBpHUTqNd25FV"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" value=""40746873808"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""1b1c5368-7b42-4252-8ab9-b795a0597456"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""mqhrNP5EQhdCcwecVo7ad6YmvSkP+Aq/eIWQBpHUTqNd25FV"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" value=""40746873808"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""cf7659b9-acf4-47ca-9926-161c15813421"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
+dados
+"<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset=""utf-8"" />
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Rede Pay</title>
+    <link href=""/Content/animate.css"" rel=""stylesheet""/>
+<link href=""/Content/animate.min.css"" rel=""stylesheet""/>
+<link href=""/Content/bootstrap-theme.css"" rel=""stylesheet""/>
+<link href=""/Content/bootstrap.css"" rel=""stylesheet""/>
+<link href=""/Content/bootstrap.min.css"" rel=""stylesheet""/>
+<link href=""/Content/calendar.css"" rel=""stylesheet""/>
+<link href=""/Content/editor.css"" rel=""stylesheet""/>
+<link href=""/Content/file-manager.css"" rel=""stylesheet""/>
+<link href=""/Content/font-awesome.css"" rel=""stylesheet""/>
+<link href=""/Content/font-awesome.min.css"" rel=""stylesheet""/>
+<link href=""/Content/form.css"" rel=""stylesheet""/>
+<link href=""/Content/generics.css"" rel=""stylesheet""/>
+<link href=""/Content/icons.css"" rel=""stylesheet""/>
+<link href=""/Content/lightbox.css"" rel=""stylesheet""/>
+<link href=""/Content/media-player.css"" rel=""stylesheet""/>
+<link href=""/Content/photo-gallery-alt.css"" rel=""stylesheet""/>
+<link href=""/Content/photo-gallery.css"" rel=""stylesheet""/>
+<link href=""/Content/style.css"" rel=""stylesheet""/>
+<link href=""/Content/nouislider.min.css"" rel=""stylesheet""/>
+
+    <script src=""/Scripts/modernizr-2.6.2.js""></script>
+
+    <script src=""/Scripts/jquery-1.10.2.js""></script>
+<script src=""/Scripts/jquery-3.1.1.js""></script>
+<script src=""/Scripts/jquery-ui.min.js""></script>
+<script src=""/Scripts/jquery.unobtrusive-ajax.js""></script>
+
+    <script src=""/Scripts/jquery-1.10.2.intellisense.js""></script>
+<script src=""/Scripts/jquery-1.10.2.js""></script>
+<script src=""/Scripts/jquery-1.10.2.min.js""></script>
+<script src=""/Scripts/jquery-ui.min.js""></script>
+<script src=""/Scripts/modernizr-2.6.2.js""></script>
+<script src=""/Scripts/bootstrap.js""></script>
+<script src=""/Scripts/_references.js""></script>
+<script src=""/Scripts/autosize.min.js""></script>
+<script src=""/Scripts/calendar.min.js""></script>
+<script src=""/Scripts/chosen.min.js""></script>
+<script src=""/Scripts/colorpicker.min.js""></script>
+<script src=""/Scripts/datetimepicker.min.js""></script>
+<script src=""/Scripts/easypiechart.js""></script>
+<script src=""/Scripts/editor.min.js""></script>
+<script src=""/Scripts/Eventos.js""></script>
+<script src=""/Scripts/fileupload.min.js""></script>
+<script src=""/Scripts/functions.js""></script>
+<script src=""/Scripts/icheck.js""></script>
+<script src=""/Scripts/input-mask.min.js""></script>
+<script src=""/Scripts/jquery.easing.1.3.js""></script>
+<script src=""/Scripts/markdown.min.js""></script>
+<script src=""/Scripts/Mascaras.js""></script>
+<script src=""/Scripts/media-player.min.js""></script>
+<script src=""/Scripts/pirobox.min.js""></script>
+<script src=""/Scripts/scroll.min.js""></script>
+<script src=""/Scripts/select.min.js""></script>
+<script src=""/Scripts/simple-inheritance.min.js""></script>
+<script src=""/Scripts/slider.min.js""></script>
+<script src=""/Scripts/spinner.min.js""></script>
+<script src=""/Scripts/superbox.min.js""></script>
+<script src=""/Scripts/toggler.min.js""></script>
+<script src=""/Scripts/valida_cpf_cnpj.js""></script>
+<script src=""/Scripts/charts/jquery.flot.animator.js""></script>
+<script src=""/Scripts/charts/jquery.flot.js""></script>
+<script src=""/Scripts/charts/jquery.flot.orderBar.js""></script>
+<script src=""/Scripts/charts/jquery.flot.pie.js""></script>
+<script src=""/Scripts/charts/jquery.flot.pie.min.js""></script>
+<script src=""/Scripts/charts/jquery.flot.resize.js""></script>
+<script src=""/Scripts/file-manager/elfinder.js""></script>
+<script src=""/Scripts/file-manager/i18n/elfinder.LANG.js""></script>
+<script src=""/Scripts/file-manager/proxy/elFinderSupportVer1.js""></script>
+<script src=""/Scripts/maps/jvectormap.js""></script>
+<script src=""/Scripts/maps/usa.js""></script>
+<script src=""/Scripts/maps/world.js""></script>
+<script src=""/Scripts/Validacoes.js""></script>
+<script src=""/Scripts/validation/validate.min.js""></script>
+<script src=""/Scripts/validation/validationEngine.min.js""></script>
+<script src=""/Scripts/Popup.js""></script>
+<script src=""/Scripts/jquery.maskedinput.js""></script>
+<script src=""/Scripts/jquery.mask.js""></script>
+
+    
+
+    <!-- Followong CSS codes are used only in this page for demo purposes. You can remove them anytime -->
+    <style type=""text/css"">
+        .font-icons .icon {
+            font-size: 25px;
+            margin-right: 5px;
+        }
+
+        .font-icons [class*=""col-""] {
+            padding: 5px 10px;
+        }
+
+            .font-icons [class*=""col-""]:hover {
+                background: rgba(0,0,0,0.2);
+            }
+    </style>
+
+</head>
+<body id=""skin-blur-chrome"">
+
+    
+
+    <div class=""container"">
+
+        
+
+        
+
+
+<div class=""block-area"" id=""required"">
+
+<form action=""/"" class=""row form-columned form-validation-1"" method=""post"" role=""form""><input name=""__RequestVerificationToken"" type=""hidden"" value=""ibjbCYgnRgeUPpTTW52YfX5nnXTF7wptSr1S8Jj2Fk2rf2OlH2iEpKQElkg5IDvcySbWJbmDsOWXr8_UBw7un_WwqaGa7MSIiFbF1rC-22I1"" />        <section id=""login"">
+
+            <h2></h2>
+            <h2 class=""m-t-0 m-b-15"">Acesso</h2>
+
+            <div id=""login"" class=""box tile animated active"">
+
+                <div class=""row"">
+                    <div class=""col-md-11 m-b-15"">
+                        <label class=""control-label col-md-2"" for=""Email:_"">Email: </label>
+                        <input class=""login-control validate[required] form-control text-box single-line"" id=""Email"" name=""Email"" type=""text"" value="""" />
+                    </div>
+                    <div class=""col-md-11 m-b-15"">
+                        <label class=""control-label col-md-2"" for=""Senha:_"">Senha: </label>
+                        <input class=""login-control validate[required]"" id=""CdUserAccount"" name=""CdUserAccount"" type=""password"" />
+                    </div>
+                </div>
+
+                <div class=""tab-container"">
+                    <ul class=""col-md-11 m-b-15"">
+                        <input type=""submit"" value=""Entrar"" class=""btn m-t-10"" />
+                        <ul class=""pull-right""><a href=""/UserAccount/ResetPassword"">Esqueci minha senha</a></ul>
+                    </ul>
+                </div>
+
+            </div>
+            
+
+    <div id=""popup"" class=""modal"" style=""position: absolut; display: block; z-index: 0;"">
+        <div class=""modal-dialog modal-sm"">
+            <div class=""modal-content"">
+                <div class=""modal-header"">
+                    <label for=""ATEN__O_"">ATEN&#199;&#195;O!</label>
+                    <img class=""b-0"" src=""/Imagens/icon/alert.png"" alt="""" width=""22px"" style=""float:right;"" />
+                </div>
+                <div class=""modal-body"">
+
+                    Dados Incorretos, tente novamente.
+                </div>
+
+                <div class=""modal-footer"">
+                    <center>
+                        <button id=""fechar"" type=""button"" class=""btn btn-sm"" data-dismiss=""modal"">Fechar</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        </section>
+</form>
+
+</div>
+
+
+
+        <div class=""container navbar-fixed-bottom"">
+            <div id=""login"" class=""box tile animated active"" style="" margin-bottom 0px;"">
+                <center>
+                    <p>Cloud Payments &copy; 2017 - Todos os direitos reservados</p>
+                </center>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+"
+dados
+"<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset=""utf-8"" />
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Rede Pay</title>
+    <link href=""/Content/animate.css"" rel=""stylesheet""/>
+<link href=""/Content/animate.min.css"" rel=""stylesheet""/>
+<link href=""/Content/bootstrap-theme.css"" rel=""stylesheet""/>
+<link href=""/Content/bootstrap.css"" rel=""stylesheet""/>
+<link href=""/Content/bootstrap.min.css"" rel=""stylesheet""/>
+<link href=""/Content/calendar.css"" rel=""stylesheet""/>
+<link href=""/Content/editor.css"" rel=""stylesheet""/>
+<link href=""/Content/file-manager.css"" rel=""stylesheet""/>
+<link href=""/Content/font-awesome.css"" rel=""stylesheet""/>
+<link href=""/Content/font-awesome.min.css"" rel=""stylesheet""/>
+<link href=""/Content/form.css"" rel=""stylesheet""/>
+<link href=""/Content/generics.css"" rel=""stylesheet""/>
+<link href=""/Content/icons.css"" rel=""stylesheet""/>
+<link href=""/Content/lightbox.css"" rel=""stylesheet""/>
+<link href=""/Content/media-player.css"" rel=""stylesheet""/>
+<link href=""/Content/photo-gallery-alt.css"" rel=""stylesheet""/>
+<link href=""/Content/photo-gallery.css"" rel=""stylesheet""/>
+<link href=""/Content/style.css"" rel=""stylesheet""/>
+<link href=""/Content/nouislider.min.css"" rel=""stylesheet""/>
+
+    <script src=""/Scripts/modernizr-2.6.2.js""></script>
+
+    <script src=""/Scripts/jquery-1.10.2.js""></script>
+<script src=""/Scripts/jquery-3.1.1.js""></script>
+<script src=""/Scripts/jquery-ui.min.js""></script>
+<script src=""/Scripts/jquery.unobtrusive-ajax.js""></script>
+
+    <script src=""/Scripts/jquery-1.10.2.intellisense.js""></script>
+<script src=""/Scripts/jquery-1.10.2.js""></script>
+<script src=""/Scripts/jquery-1.10.2.min.js""></script>
+<script src=""/Scripts/jquery-ui.min.js""></script>
+<script src=""/Scripts/modernizr-2.6.2.js""></script>
+<script src=""/Scripts/bootstrap.js""></script>
+<script src=""/Scripts/_references.js""></script>
+<script src=""/Scripts/autosize.min.js""></script>
+<script src=""/Scripts/calendar.min.js""></script>
+<script src=""/Scripts/chosen.min.js""></script>
+<script src=""/Scripts/colorpicker.min.js""></script>
+<script src=""/Scripts/datetimepicker.min.js""></script>
+<script src=""/Scripts/easypiechart.js""></script>
+<script src=""/Scripts/editor.min.js""></script>
+<script src=""/Scripts/Eventos.js""></script>
+<script src=""/Scripts/fileupload.min.js""></script>
+<script src=""/Scripts/functions.js""></script>
+<script src=""/Scripts/icheck.js""></script>
+<script src=""/Scripts/input-mask.min.js""></script>
+<script src=""/Scripts/jquery.easing.1.3.js""></script>
+<script src=""/Scripts/markdown.min.js""></script>
+<script src=""/Scripts/Mascaras.js""></script>
+<script src=""/Scripts/media-player.min.js""></script>
+<script src=""/Scripts/pirobox.min.js""></script>
+<script src=""/Scripts/scroll.min.js""></script>
+<script src=""/Scripts/select.min.js""></script>
+<script src=""/Scripts/simple-inheritance.min.js""></script>
+<script src=""/Scripts/slider.min.js""></script>
+<script src=""/Scripts/spinner.min.js""></script>
+<script src=""/Scripts/superbox.min.js""></script>
+<script src=""/Scripts/toggler.min.js""></script>
+<script src=""/Scripts/valida_cpf_cnpj.js""></script>
+<script src=""/Scripts/charts/jquery.flot.animator.js""></script>
+<script src=""/Scripts/charts/jquery.flot.js""></script>
+<script src=""/Scripts/charts/jquery.flot.orderBar.js""></script>
+<script src=""/Scripts/charts/jquery.flot.pie.js""></script>
+<script src=""/Scripts/charts/jquery.flot.pie.min.js""></script>
+<script src=""/Scripts/charts/jquery.flot.resize.js""></script>
+<script src=""/Scripts/file-manager/elfinder.js""></script>
+<script src=""/Scripts/file-manager/i18n/elfinder.LANG.js""></script>
+<script src=""/Scripts/file-manager/proxy/elFinderSupportVer1.js""></script>
+<script src=""/Scripts/maps/jvectormap.js""></script>
+<script src=""/Scripts/maps/usa.js""></script>
+<script src=""/Scripts/maps/world.js""></script>
+<script src=""/Scripts/Validacoes.js""></script>
+<script src=""/Scripts/validation/validate.min.js""></script>
+<script src=""/Scripts/validation/validationEngine.min.js""></script>
+<script src=""/Scripts/Popup.js""></script>
+<script src=""/Scripts/jquery.maskedinput.js""></script>
+<script src=""/Scripts/jquery.mask.js""></script>
+
+    
+
+    <!-- Followong CSS codes are used only in this page for demo purposes. You can remove them anytime -->
+    <style type=""text/css"">
+        .font-icons .icon {
+            font-size: 25px;
+            margin-right: 5px;
+        }
+
+        .font-icons [class*=""col-""] {
+            padding: 5px 10px;
+        }
+
+            .font-icons [class*=""col-""]:hover {
+                background: rgba(0,0,0,0.2);
+            }
+    </style>
+
+</head>
+<body id=""skin-blur-chrome"">
+
+    
+
+    <div class=""container"">
+
+        
+
+        
+
+
+<div class=""block-area"" id=""required"">
+
+<form action=""/"" class=""row form-columned form-validation-1"" method=""post"" role=""form""><input name=""__RequestVerificationToken"" type=""hidden"" value=""3kGG052MhG9nBD6CQLuLiNgvWZV9xwjq3krZO6b7SM_Se4BaLeozDVOqiXPRQM5OQRBL0NwAgbTCPIOPrDv5ugCY6VcK7f74be51iQH78zY1"" />        <section id=""login"">
+
+            <h2></h2>
+            <h2 class=""m-t-0 m-b-15"">Acesso</h2>
+
+            <div id=""login"" class=""box tile animated active"">
+
+                <div class=""row"">
+                    <div class=""col-md-11 m-b-15"">
+                        <label class=""control-label col-md-2"" for=""Email:_"">Email: </label>
+                        <input class=""login-control validate[required] form-control text-box single-line"" id=""Email"" name=""Email"" type=""text"" value="""" />
+                    </div>
+                    <div class=""col-md-11 m-b-15"">
+                        <label class=""control-label col-md-2"" for=""Senha:_"">Senha: </label>
+                        <input class=""login-control validate[required]"" id=""CdUserAccount"" name=""CdUserAccount"" type=""password"" />
+                    </div>
+                </div>
+
+                <div class=""tab-container"">
+                    <ul class=""col-md-11 m-b-15"">
+                        <input type=""submit"" value=""Entrar"" class=""btn m-t-10"" />
+                        <ul class=""pull-right""><a href=""/UserAccount/ResetPassword"">Esqueci minha senha</a></ul>
+                    </ul>
+                </div>
+
+            </div>
+            
+
+    <div id=""popup"" class=""modal"" style=""position: absolut; display: block; z-index: 0;"">
+        <div class=""modal-dialog modal-sm"">
+            <div class=""modal-content"">
+                <div class=""modal-header"">
+                    <label for=""ATEN__O_"">ATEN&#199;&#195;O!</label>
+                    <img class=""b-0"" src=""/Imagens/icon/alert.png"" alt="""" width=""22px"" style=""float:right;"" />
+                </div>
+                <div class=""modal-body"">
+
+                    Dados Incorretos, tente novamente.
+                </div>
+
+                <div class=""modal-footer"">
+                    <center>
+                        <button id=""fechar"" type=""button"" class=""btn btn-sm"" data-dismiss=""modal"">Fechar</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        </section>
+</form>
+
+</div>
+
+
+
+        <div class=""container navbar-fixed-bottom"">
+            <div id=""login"" class=""box tile animated active"" style="" margin-bottom 0px;"">
+                <center>
+                    <p>Cloud Payments &copy; 2017 - Todos os direitos reservados</p>
+                </center>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+"
+dados
+"<?xml version=""1.0"" encoding=""UTF-8""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Transitional//EN"" ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"" >
+<html xmlns=""http://www.w3.org/1999/xhtml""><head>
+			<meta http-equiv=""X-UA-Compatible"" content=""IE=Edge,chrome=1"" />
+			<meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"" />
+			<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" /><link type=""text/css"" rel=""stylesheet"" href=""/stone/javax.faces.resource/theme.css.jsf?ln=primefaces-ged"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><link rel=""stylesheet"" media=""screen"" type=""text/css"" href=""/stone/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3.RC2"" /><script type=""text/javascript"" src=""/stone/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3.RC2""><!--
+
+//--></script><script type=""text/javascript""><!--
+if(window.PrimeFaces){}
+//--></script>
+		<title>Produção GED - Gerenciador Eletrônico de Documentos</title><form id=""j_id_7"" name=""j_id_7"" method=""post"" action=""/stone/login.jsf"" enctype=""application/x-www-form-urlencoded""><script id=""j_id_7:j_id_8_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Poll"",""widget_j_id_7_j_id_8"",{id:""j_id_7:j_id_8"",frequency:1800,autoStart:true,fn:function(){PrimeFaces.ab({s:""j_id_7:j_id_8"",f:""j_id_7"",onst:function(cfg){canExit = true; location.reload();;}});}});});
+//--></script><input type=""hidden"" name=""j_id_7_SUBMIT"" value=""1"" /><input type=""hidden"" name=""javax.faces.ViewState"" id=""javax.faces.ViewState"" value=""AU2tS/IwxChCcwecVo7ad6lHFFLda0kle2KChrlDEyiWaKsO"" /></form><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/locale.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/mask.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/common.js.jsf""><!--
+
+//--></script><script type=""text/javascript"" src=""/stone/javax.faces.resource/js/close.js.jsf""><!--
+
+//--></script>
+
+		<link href=""http://fonts.googleapis.com/css?family=Open+Sans"" rel=""stylesheet"" type=""text/css"" /></head><body><div id=""page"">
+
+	<div id=""header"">
+		<div class=""div-logo""><img src=""/stone/javax.faces.resource/images/logo_esquerda.png.jsf?ln=primefaces-ged"" class=""logo"" />
+		</div>
+	</div>
+		<a name=""inicioHeader""></a><div id=""j_id_q"" class=""ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"" style=""background: transparent !important;""><div class=""ui-dialog-content ui-widget-content"">
+			<div style=""text-align: center;"">
+				<span style=""color: #fff; font-size: 25px;"">Processando...</span> <br /><img id=""j_id_s"" src=""/stone/javax.faces.resource/images/loading.gif.jsf?ln=primefaces-ged&amp;pfdrid_c=true"" alt="""" />
+			</div></div></div><script id=""j_id_q_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Dialog"",""statusDialog"",{id:""j_id_q"",draggable:false,resizable:false,modal:true});});
+//--></script><div id=""j_id_p""></div><script id=""j_id_p_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""AjaxStatus"",""widget_j_id_p"",{id:""j_id_p"",start:function(){PF('statusDialog').show();},error:function(){PF('statusDialog').hide();},success:function(){PF('statusDialog').hide();}});});
+//--></script>
+
+	<script type=""text/javascript""><!--
+
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+	
+//--></script><div id=""content"" class=""noBorder"">
+				<div style=""width: 300px; height: 300px; margin: 0 auto; margin-top: 5%; background-color: #fff; border: 2px solid #C6C6C6; border-radius: 5px; overflow: auto;"">
+					<form action=""j_spring_security_check"" method=""post"">
+						<div style=""text-align: center; margin-top: 30px;"">
+							<span style=""font-size: 20px; font-weight: 700; color: #444444;"">Acesso ao sistema</span>
+						</div>
+
+						<div style=""width: 150px; margin: 0 auto; margin-top: 30px;""><input id=""j_username"" name=""j_username"" type=""text"" autocomplete=""off"" placeholder=""CPF"" onkeyup=""jump('j_username', 11, 'j_password')"" style=""width: 150px; font-size: 14px !important;"" class=""ui-inputfield ui-inputmask ui-widget ui-state-default ui-corner-all"" /><script id=""j_username_s"" type=""text/javascript""><!--
+PrimeFaces.cw(""InputMask"",""widget_j_username"",{id:""j_username"",mask:""999.999.999-99""});
+//--></script><input id=""j_password"" name=""j_password"" type=""password"" class=""ui-inputfield ui-password ui-widget ui-state-default ui-corner-all"" style=""width:150px; margin-top: 10px;"" placeholder=""Senha"" /><script id=""j_password_s"" type=""text/javascript""><!--
+$(function(){PrimeFaces.cw(""Password"",""widget_j_password"",{id:""j_password""});});
+//--></script>
+						</div><table style=""width: 100%; text-align: center; margin-top: 30px; font-size: 14px !important;""><tbody>
+<tr><td>
+							<button class=""ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-button-custom"" onclick=""PF('statusDialog').show();"">
+								<span class=""ui-button-icon-left ui-icon ui-c ui-icon-locked""></span> <span class=""ui-button-text ui-c"">Acessar</span>
+							</button>
+
+							<input type=""hidden"" name=""_csrf"" value=""dc0a9905-91b9-4f9a-a35b-28fb88501bfa"" /></td></tr>
+<tr><td><img id=""j_id_12"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+<tr><td><img id=""j_id_13"" width="""" height="""" alt="""" src=""/stone/javax.faces.resource/spacer/dot_clear.gif.jsf?ln=primefaces&amp;v=5.3.RC2"" /></td></tr>
+</tbody>
+</table>
+
+						<input type=""password"" style=""display: none;"" />
+					</form>
+				</div></div></div>
+
+	<div id=""footer"">Copyright MAR Informática 2016</div></body>
+</html>"
