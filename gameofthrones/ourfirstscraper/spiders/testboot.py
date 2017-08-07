@@ -14,7 +14,6 @@ response2 = r.post('http://200.221.196.98:8086/stone/j_spring_security_check', d
 
 form2 = {}
 
-
 form2["javax.faces.partial.ajax"]= "true"
 form2["javax.faces.source"] = "searchForm:searchButton"
 form2["javax.faces.partial.execute"] = "searchForm:searchButton searchForm:filterGrid searchForm:complementFilterGrid searchForm:complementFilterGrid2"
@@ -33,6 +32,27 @@ form2["searchForm:backofficeFilter_focus"] = ""
 form2["searchForm:backofficeFilter_input"]  = ""
 form2["searchForm_SUBMIT"] =1
 
+form3 = {}
+''' add parameter to open a detail page '''
+'''form3["javax.faces.partial.ajax"] = "true"'''
+form3["javax.faces.source"] = "searchForm:dtbEntities:0:j_id_2u"
+form3["primefaces.resetvalues"] = "true"
+form3["javax.faces.partial.execute"] = "@all" 
+form3["javax.faces.partial.render"]="searchForm editForm"
+form3["searchForm:dtbEntities:0:j_id_2u"] = "searchForm:dtbEntities:0:j_id_2u"
+form3["searchForm:documentoFilter"] = ""
+form3["searchForm:nomeFilter"] = ""
+form3["searchForm:statusFilter_focus"] = ""
+form3["searchForm:statusFilter_input"] = ""
+form3["searchForm:nomeFantasiaFilter"] = ""
+form3["searchForm:dataDeFilter_input"] = ""
+form3["searchForm:dataAteFilter_input"] = ""
+form3["searchForm:consultorFilter_focus"] = ""
+form3["searchForm:consultorFilter_input"] = ""
+form3["searchForm:backofficeFilter_focus"] = ""
+form3["searchForm:backofficeFilter_input"] = ""
+form3["editForm_SUBMIT"] = "1"
+
 
 
 response3 = r.post('http://200.221.196.98:8086/stone/pages/cliente/finalizado.jsf',  data=form )
@@ -41,7 +61,15 @@ soup2 = BeautifulSoup(response3.text, 'html.parser')
 viewState  = soup2.findAll("input", attrs={"name" : "javax.faces.ViewState"})[0]['value']
 print(viewState)
 form2["javax.faces.ViewState"]= viewState
+
 response3 = r.post('http://200.221.196.98:8086/stone/pages/cliente/finalizado.jsf',  data=form2 )
+soup2 = BeautifulSoup(response3.text, 'html.parser')
+viewState2  = soup2.findAll("update", attrs={"id" : "javax.faces.ViewState"})[0].text
+print(viewState2)
+
+form3["javax.faces.ViewState"]= viewState2
+
+response3 = r.post('http://200.221.196.98:8086/stone/pages/cliente/finalizado.jsf',  data=form3 )
 soup2 = BeautifulSoup(response3.text, 'html.parser')
 print(soup2.prettify())
 
