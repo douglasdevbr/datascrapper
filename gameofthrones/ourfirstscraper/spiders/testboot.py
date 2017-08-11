@@ -36,7 +36,6 @@ form2["searchForm:backofficeFilter_focus"] = ""
 form2["searchForm:backofficeFilter_input"]  = ""
 form2["searchForm_SUBMIT"] = 1
 
-
 form2["javax.faces.partial.render"] = "searchForm:dtbEntities"
 form2["searchForm:dtbEntities"] = "searchForm:dtbEntities"
 form2["searchForm:dtbEntities_encodeFeature"] = "true"
@@ -65,7 +64,7 @@ for loop in range(14, 16):
     #form3["javax.faces.source"] = "searchForm:dtbEntities:1:j_id_2u"
     '''form3["primefaces.resetvalues"] = "true"'''
     form3["javax.faces.partial.execute"] = all 
-    form3["javax.faces.partial.render"]="searchForm editForm"
+    form3["javax.faces.partial.render"] = "searchForm editForm"
     #form3["searchForm:dtbEntities:1:j_id_2u"] = "searchForm:dtbEntities:1:j_id_2u"
     form3["searchForm:documentoFilter"] = ""
     form3["searchForm:nomeFilter"] = ""
@@ -90,8 +89,14 @@ for loop in range(14, 16):
     soup2 = BeautifulSoup(response3.text, 'html.parser')
     inputs = []
     inputs = soup2.find_all("input")
+
     imgs = []
     imgs = soup2.find_all(title = "Abrir")
+
+    # docs = []
+    # docs = soup2.find_all(title = "Download") ####
+
+    #print(soup2.prettify())
     
     number = 0
     for a in imgs:
@@ -104,94 +109,116 @@ for loop in range(14, 16):
         from urllib.request import urlretrieve
         url = 'http://200.221.196.98:8086/{0}'.format(teste)
         url = url.replace("min=true", "min=false")
-
         dst = 'C:/Users/clari/OneDrive/Documentos/TesteGED/{0}-{1}.jpg'.format(inputs[6]["value"], number)
         urlretrieve(url, dst)
 
     #print(soup2.prettify())
 
-        #viewState2  = soup2.findAll("update", attrs={"id" : "javax.faces.ViewState"})[0].text
 
-    for x in range(6,10):
+    for x in range(6,10):  #documento, razão social, nome fantasia, faturamento
         print(inputs[x]["value"])
 
 
-        
+    #MASCARAS
+    cpf = inputs[19]["value"]
+    cpf = "{0}.{1}.{2}-{3}".format(cpf[0:3], cpf[3:6], cpf[6:9], cpf[9:11])
 
-#TESTE IMAGEM
-#url = 'http://200.221.196.98:8086//stone/fotos?idCliente=4403&nomeFoto=fachada.jpg&uid=87d7e01e-0b68-45d7-a4b0-69db029f90ea&temp=false&min=false&pfdrid_c=false&uid=1bde9d0f-0238-4f1e-bbde-ee045a53e713' 
-# f = urllib.request.urlopen(url)
-# response = requests.get(url, stream=True)
-# with open('img.jpg', 'wb') as code: 
-#     code.write(f.read())
+    cph = inputs[22]["value"]
+    cph = "({0}) {1}-{2}".format(cph[0:2], cph[2:7], cph[7:11])
+
+    ph = inputs[23]["value"]
+    ph = "({0}) {1}-{2}".format(ph[0:2], ph[2:6], ph[6:10])
+
+    cep = inputs[24]["value"]
+    cep = "{0}.{1}-{2}".format(cep[0:2], cep[2:5], cep[5:8])
+    #
+
+    form4 = {}
+    form4["editForm:documento"] = inputs[6]["value"] #6
+    form4["editForm:razaoSocial"] = inputs[7]["value"] #7
+    form4["editForm:nomeFatura"] = inputs[8]["value"] #8
+    form4["editForm:faturamentoMes"] = inputs[9]["value"] #9
+    form4["editForm:banco_filter"] = ""
+    form4["editForm:agencia"] = inputs[12]["value"] #12
+    form4["editForm:digitoAgencia"] = inputs[13]["value"] #13
+    form4["editForm:operacao"] = inputs[14]["value"] #14 vazio*
+    form4["editForm:contaCorrente"] = inputs[15]["value"] #15
+    form4["editForm:digitoContaCorrente"] = inputs[16]["value"] #16
+    form4["editForm:nome"] = inputs[18]["value"] #18
+    form4["editForm:cpf"] = cpf #19                                 MASCARA
+    form4["editForm:inputDtNasc"] = inputs[20]["value"] #20
+    form4["editForm:email"] = inputs[21]["value"] #21
+    form4["editForm:celular"] = cph #22                             MASCARA
+    form4["editForm:telefone"] = ph #23                             MASCARA
+    form4["editForm:cepInstalacao"] = cep #24                       MASCARA
+    form4["editForm:bairroInstalacao"] = inputs[25]["value"] #25   
+    form4["editForm:numeroInstalacao"] = inputs[26]["value"] #26
+    form4["editForm:logradouroInstalacao"] = inputs[27]["value"] #27
+    form4["editForm:complementoInstalacao"] = inputs[28]["value"] #28
+    form4["editForm:cidadeInstalacao_filter"] = "" 
+    form4["editForm:referenciaInstalacao"] = inputs[31]["value"] #31
+    form4["editForm:habilitaAdquirencia_input"] = "on"
+    form4["editForm:porcentagemDebito"] = inputs[37]["value"] #37
+    form4["editForm:porcentagemCredito"] = inputs[38]["value"] #38
+    form4["editForm:porcentagemParcelado2a6"] = inputs[39]["value"] #39
+    form4["editForm:porcentagemParcelado7a12"] = inputs[40]["value"] #40
+    form4["editForm:porcentagemEmissor"] = inputs[41]["value"] #41
+    form4["editForm:porcentagemAntecipacao"] = inputs[43]["value"] #43
+    form4["editForm:quantidadePos"] = inputs[45]["value"] #45
+    form4["editForm:valorPos"] = inputs[46]["value"] #46
+    form4["editForm:quantidadeTef"] = inputs[47]["value"] #47
+    form4["editForm:valorTef"] = inputs[48]["value"] #48
+    form4["editForm:quantidadeMobile"] = inputs[49]["value"] #49
+    form4["editForm:valorMobile"] = inputs[50]["value"] #50
+    form4["editForm:valorSoftware"] = inputs[51]["value"] #51
+    form4["editForm:outros"] = inputs[52]["value"]  #52
+    form4["editForm:diaDePagamento"] = inputs[53]["value"] #53
+    form4["editForm:obsNumeroSerie"] = ""  #70? não tem value
+    form4["editForm:obsOutros"] = inputs[71]["value"] #71 vazio*
+    form4["editForm:obsTEFHouse"] = ""
+    form4["editForm:j_id_az_4_input"] = "" 
+    form4["editForm:j_id_az_b_input"] = ""
+    form4["editForm:descricaoGravacao"] = ""
+    form4["editForm:descricaoEnvio"] = ""
+    form4["editForm:descricaoAprovacao"] = ""
+    form4["editForm:descricaoNegacao"] = ""
+    form4["editForm:descricaoCancelamento"] = ""
+    form4["editForm:descricaoEmAnalise"] = ""
+    form4["editForm:descricaoPendentePos"] = ""
+    form4["editForm:numeroSerie"] = "" #78? não tem value
+    form4["editForm_SUBMIT"] = 1
+    form4["javax.faces.ViewState"] = viewState2
+    form4["editForm:documentosGrid:0:j_id_ah"] = "editForm:documentosGrid:0:j_id_ah" ##
+
+    response4 = r.post('http://200.221.196.98:8086/stone/pages/cliente/finalizado.jsf',  data=form4 )
+    response4.headers["Content-Disposition"] = "attachment;filename='contrato.pdf'"
+
+    # with open('contratoTeste.pdf', 'wb') as code: 
+    #     code.write(response4.raw)
+
+
+    # number = 0
+    # for a in docs:
+    #     number = number + 1
+
+    # with open('doc{0}-{1}.pdf'.format(inputs[6]["value"], number), 'wb') as f:
+    #     response4.raw.decode_content = True
+    #     shutil.copyfileobj(response4.raw, f)
+
+
+    with open('contrato.pdf', 'wb') as f:
+        response4.raw.decode_content = True
+        shutil.copyfileobj(response4.raw, f)
+
+
+    soup4 = BeautifulSoup(response4.text, 'html.parser')  
+    #print(soup4.prettify())
 
 #SALVANDO IMAGEM:
 # from urllib.request import urlretrieve
 # url = 'http://200.221.196.98:8086//stone/fotos?idCliente=4403&nomeFoto=fachada.jpg&uid=87d7e01e-0b68-45d7-a4b0-69db029f90ea&temp=false&min=false&pfdrid_c=false&uid=1bde9d0f-0238-4f1e-bbde-ee045a53e713' 
 # dst = 'C:/Users/clari/OneDrive/Documentos/TesteGED/img2.jpg'
 # urlretrieve(url, dst)
-
-
-
-#PARAMETROS POST IMAGEM
-# form 5 = {}
-# form5["javax.faces.partial.ajax"] = true
-# form5["javax.faces.source"] = "editForm:fotosGrid:0:j_id_a8"
-# form5["javax.faces.partial.execute"] = "editForm:fotosGrid:0:j_id_a8"
-# form5["javax.faces.partial.render"] = "editForm:abreFotoId"
-# form5["editForm:fotosGrid:0:j_id_a8"] = "editForm:fotosGrid:0:j_id_a8"
-# form5["editForm:documento"] = 10644207000152
-# form5["editForm:razaoSocial"] = "IGREJA EVANGELICA VERBO DA VIDA BELO HORIZONTE"
-# form5["editForm:nomeFatura"] = "VERBO DA VIDA BH"
-# form5["editForm:faturamentoMes"] = 50.000,00
-# form5["editForm:banco_filter"] = ""
-# form5["editForm:agencia"] = 1229
-# form5["editForm:digitoAgencia"] = 7
-# form5["editForm:operacao"] = ""
-# form5["editForm:contaCorrente"] = "00136950"
-# form5["editForm:digitoContaCorrente"] = 4
-# form5["editForm:nome"] = "MARCELO SILVA CARVALHO"
-# form5["editForm:cpf"] = "687.892.705-68"
-# form5["editForm:inputDtNasc"] = "31/01/1975"
-# form5["editForm:email"] = "presidencia@verbobh.com"
-# form5["editForm:celular"] = "(31) 98872-4311"
-# form5["editForm:telefone"] = "(31) 3291-8799"
-# form5["editForm:cepInstalacao"] = "30.411-052"
-# form5["editForm:bairroInstalacao"] = "PRADO"
-# form5["editForm:numeroInstalacao"] = 164
-# form5["editForm:logradouroInstalacao"] = "RUA ERE"
-# form5["editForm:complementoInstalacao"] = ""
-# form5["editForm:cidadeInstalacao_filter"] = ""
-# form5["editForm:referenciaInstalacao"] = ""
-# form5["editForm:habilitaAdquirencia_input"] = "on"
-# form5["editForm:porcentagemDebito"] = "2,09"     ####
-# form5["editForm:porcentagemCredito"] = "2,57"
-# form5["editForm:porcentagemParcelado2a6"] = "2,62"
-# form5["editForm:porcentagemParcelado7a12"] = "2,88"
-# form5["editForm:porcentagemEmissor"] = "0,00"
-# form5["editForm:porcentagemAntecipacao"] = "0,00"
-# form5["editForm:quantidadePos"] = 1
-# form5["editForm:valorPos"] = "80,00"
-# form5["editForm:quantidadeTef"] = 0
-# form5["editForm:valorTef"] = "0,00"
-# form5["editForm:quantidadeMobile"] = 0
-# form5["editForm:valorMobile"] = "0,00"
-# form5["editForm:valorSoftware"] = "0,00"
-# form5["editForm:outros"] = "0,00"
-# form5["editForm:diaDePagamento"] = 20
-# form5["editForm:obsNumeroSerie"] = "524-297-661"
-# form5["editForm:obsOutros"] = ""
-# form5["editForm:obsTEFHouse"] = ""
-# form5["editForm:descricaoGravacao"] = ""
-# form5["editForm:descricaoEnvio"] = ""
-# form5["editForm:descricaoAprovacao"] = ""
-# form5["editForm:descricaoNegacao"] = ""
-# form5["editForm:descricaoCancelamento"] = ""
-# form5["editForm:descricaoEmAnalise"] = ""
-# form5["editForm:descricaoPendentePos"] = ""
-# form5["editForm:numeroSerie"] = ""
-# form5["editForm_SUBMIT"] = 1
-# form5["javax.faces.ViewState"] = "J0LHZe2qmGdCcwecVo7ad13yEfrUaB+/+pdeAhyCqiY9/Pcs"
 
 #PARAMETROS POST DOCUMENTO
 # form4 = {}
@@ -268,5 +295,3 @@ form = {x.attrib["name"]: x.attrib["value"] for x in hidden_inputs}
 '''
 
 '''print(result)'''
-
-
